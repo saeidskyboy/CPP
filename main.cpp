@@ -1,4 +1,4 @@
-#include <iostream> # this is a in out library
+#include <iostream> // this is an in out library
 
 using namespace std;
 int main()

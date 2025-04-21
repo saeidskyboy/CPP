@@ -1,3 +1,3 @@
 #!/bin/bash
-clang++ -std=c++20 main.cpp -o main
+clang++ -std=c++20 math.cpp -o main
 ./main
