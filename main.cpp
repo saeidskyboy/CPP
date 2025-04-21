@@ -1,11 +1,23 @@
 #include <iostream> # this is a in out library
 
+using namespace std;
 int main()
 {
-    int a = 5;                                       // this is a variable
-    int b = 10;                                      // this is another variable
-    int sum = a + b;                                 // this is a sum
-    std::cout << "The sum is: " << sum << std::endl; // this is a print statement
+    double Sales = 95000;
+    cout << "Sales: $" << Sales << endl;
 
+    const double StateTaxRate = 0.04;
+    const double CountyTaxRate = 0.02;
+
+    double CountyTax = Sales * CountyTaxRate;
+    cout << "County Tax: $" << CountyTax << endl;
+
+    double StateTax = Sales * StateTaxRate;
+    cout << "State Tax: $" << StateTax << endl;
+
+    double TotalTax = StateTax + CountyTax;
+    double NetIncom = Sales - TotalTax;
+    cout << "Total Tax: $" << TotalTax << endl
+         << "Total Sales after Tax: $" << NetIncom << endl;
     return 0;
 }
